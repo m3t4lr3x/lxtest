@@ -29,15 +29,15 @@ export default function App() {
             {/* right-smallcard-container */}
             <div className="col-span-3">
               <div className="px-2 mt-5 sm:mt-5 md:mt-5 lg:mt-0">
-                <a className="text-gray-400 active:bg-black hover:bg-black hover:text-white px-2 py-1 rounded-sm mr-2 cursor-pointer text-sm">Today</a>
-                <a className="text-gray-400 active:bg-black hover:bg-black hover:text-white px-2 py-1 rounded-sm mr-2 cursor-pointer text-sm">Weekly</a>
-                <a className="text-gray-400 active:bg-black hover:bg-black hover:text-white px-2 py-1 rounded-sm mr-2 cursor-pointer">Monthly</a>
+                <a href="/#" className="text-white bg-black active:bg-black hover:bg-black hover:text-white px-2 py-1 rounded-sm mr-2 cursor-pointer text-sm">Today</a>
+                <a href="/#" className="text-gray-400 active:bg-black hover:bg-black hover:text-white px-2 py-1 rounded-sm mr-2 cursor-pointer text-sm">Weekly</a>
+                <a href="/#" className="text-gray-400 active:bg-black hover:bg-black hover:text-white px-2 py-1 rounded-sm mr-2 cursor-pointer">Monthly</a>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
                   {/* smallcards-area */}
                   <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
-                    <div className="relative h-16 w-16">
+                    <div className="relative h-16 w-16 flex-shrink-0">
                       <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
                     </div>
                     <div>
@@ -49,7 +49,7 @@ export default function App() {
                   </div>
 
                   <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
-                    <div className="relative h-16 w-16">
+                    <div className="relative h-16 w-16 flex-shrink-0">
                       <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
                     </div>
                     <div>
@@ -61,7 +61,7 @@ export default function App() {
                   </div>
 
                   <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
-                    <div className="relative h-16 w-16">
+                    <div className="relative h-16 w-16 flex-shrink-0">
                       <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
                     </div>
                     <div>
@@ -73,7 +73,7 @@ export default function App() {
                   </div>
 
                   <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
-                    <div className="relative h-16 w-16">
+                    <div className="relative h-16 w-16 flex-shrink-0">
                       <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
                     </div>
                     <div>
@@ -85,7 +85,7 @@ export default function App() {
                   </div>
 
                   <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
-                    <div className="relative h-16 w-16">
+                    <div className="relative h-16 w-16 flex-shrink-0">
                       <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
                     </div>
                     <div>
@@ -97,7 +97,7 @@ export default function App() {
                   </div>
 
                   <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
-                    <div className="relative h-16 w-16">
+                    <div className="relative h-16 w-16 flex-shrink-0">
                       <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
                     </div>
                     <div>
