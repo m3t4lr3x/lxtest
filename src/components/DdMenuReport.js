@@ -8,7 +8,7 @@ export default function DdMenuReport() {
     <div className="text-right">
       <Menu as="div" className="relative inline-block text-left">
         <div>
-          <Menu.Button className="inline-flex w-full justify-center rounded-sm px-4 py-2 text-sm font-medium text-gray-400 hover:bg-yellow-300 hover:text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+          <Menu.Button className="inline-flex w-full justify-center rounded-sm px-2 py-2 text-sm font-medium text-gray-400 hover:bg-yellow-300 hover:text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
             <ChartPieIcon
               className="h-4 mr-2"
             />
