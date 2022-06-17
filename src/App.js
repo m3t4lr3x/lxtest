@@ -268,7 +268,7 @@ export default function App() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr className="hover:bg-gray-300">
                     <td className="p-5 whitespace-nowrap">IL-ISTANBUL LOTTERY</td>
                     <td className="text-center">4</td>
                     <td className="text-center px-5 text-sm whitespace-nowrap">
@@ -288,7 +288,7 @@ export default function App() {
                     <td className="text-right"><span className="text-sm text-gray-400 mr-2">Rp.</span>2.029.000</td>
                     <td className="text-right pr-5"><span className="text-sm text-gray-400 mr-2">Rp.</span>2.024.694</td>
                   </tr>
-                  <tr>
+                  <tr className="hover:bg-gray-300">
                     <td className="p-5 whitespace-nowrap">JP-JAPANESE</td>
                     <td className="text-center">1</td>
                     <td className="text-center px-5 text-sm">
@@ -308,7 +308,7 @@ export default function App() {
                     <td className="text-right"><span className="text-sm text-gray-400 mr-2">Rp.</span>0</td>
                     <td className="text-right pr-5"><span className="text-sm text-gray-400 mr-2">Rp.</span>0</td>
                   </tr>
-                  <tr>
+                  <tr className="hover:bg-gray-300">
                     <td className="p-5 whitespace-nowrap">PL-POLLANDIA</td>
                     <td className="text-center">3</td>
                     <td className="text-center px-5 text-sm">
@@ -328,7 +328,7 @@ export default function App() {
                     <td className="text-right"><span className="text-sm text-gray-400 mr-2">Rp.</span>2.972.100.</td>
                     <td className="text-right pr-5"><span className="text-sm text-gray-400 mr-2">Rp.</span>2.971.500</td>
                   </tr>
-                  <tr>
+                  <tr className="hover:bg-gray-300">
                     <td className="p-5 whitespace-nowrap">UKN-UKRAINA</td>
                     <td className="text-center">1</td>
                     <td className="text-center px-5 text-sm">
@@ -348,7 +348,7 @@ export default function App() {
                     <td className="text-right"><span className="text-sm text-gray-400 mr-2">Rp.</span>7.126.590</td>
                     <td className="text-right pr-5"><span className="text-sm text-gray-400 mr-2">Rp.</span>7.034078</td>
                   </tr>
-                  <tr>
+                  <tr className="hover:bg-gray-300">
                     <td className="p-5 whitespace-nowrap">IL-ISTANBUL LOTTERY</td>
                     <td className="text-center">4</td>
                     <td className="text-center px-5 text-sm">
