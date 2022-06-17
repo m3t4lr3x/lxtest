@@ -1,18 +1,15 @@
 import { Menu, Transition } from '@headlessui/react'
 import { Fragment, useEffect, useRef, useState } from 'react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
-import { CogIcon } from '@heroicons/react/solid'
+import { ChevronDownIcon, UserAddIcon } from '@heroicons/react/solid'
+import { UserIcon } from '@heroicons/react/solid'
 
-export default function DdMenuInternal() {
+export default function DdMenuPeriod() {
   return (
     <div className="text-right">
       <Menu as="div" className="relative inline-block text-left">
         <div>
-          <Menu.Button className="inline-flex w-full justify-center rounded-sm px-2 py-2 text-sm font-medium text-gray-400 hover:bg-yellow-300 hover:text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-            <CogIcon
-              className="h-4 mr-2"
-            />
-            Internal
+          <Menu.Button className="parent inline-flex w-full justify-center rounded-sm px-2 py-2 text-sm font-medium text-balck hover:bg-yellow-300 hover:text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+            Period
             <ChevronDownIcon
               className="ml-2 -mr-1 h-5 w-5"
               aria-hidden="true"
@@ -37,7 +34,7 @@ export default function DdMenuInternal() {
                       active ? 'bg-yellow-300 text-black' : 'text-gray-400'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
-                    Internal1
+                    1
                   </button>
                 )}
               </Menu.Item>
@@ -48,7 +45,29 @@ export default function DdMenuInternal() {
                       active ? 'bg-yellow-300 text-black' : 'text-gray-400'
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
-                    Internal2
+                    2
+                  </button>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active ? 'bg-yellow-300 text-black' : 'text-gray-400'
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  >
+                    3
+                  </button>
+                )}
+              </Menu.Item>
+              <Menu.Item>
+                {({ active }) => (
+                  <button
+                    className={`${
+                      active ? 'bg-yellow-300 text-black' : 'text-gray-400'
+                    } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                  >
+                    4
                   </button>
                 )}
               </Menu.Item>
@@ -59,4 +78,3 @@ export default function DdMenuInternal() {
     </div>
   )
 }
-

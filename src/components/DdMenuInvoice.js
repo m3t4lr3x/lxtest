@@ -14,7 +14,7 @@ export default function DdMenuInvoice() {
             />
             Invoice
             <ChevronDownIcon
-              className="ml-2 -mr-1 h-5 w-5 text-gray-400 text-violet-200 hover:text-black"
+              className="ml-2 -mr-1 h-5 w-5 "
               aria-hidden="true"
             />
           </Menu.Button>

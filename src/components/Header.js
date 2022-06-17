@@ -40,7 +40,7 @@ function Header() {
                 <div className="ml-10 flex items-center space-x-4">
                   <a
                     href="/#"
-                    className="flex items-center text-gray-300 hover:bg-yellow-300 hover:text-black px-3 py-2 px-2 rounded-sm text-sm font-medium"
+                    className="bg-yellow-300 text-black flex items-center px-3 py-2 px-2 rounded-sm text-sm font-medium"
                   >
                     <CubeTransparentIcon 
                       className="h-4 mr-2"

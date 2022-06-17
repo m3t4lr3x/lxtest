@@ -1,12 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+
 import Header from './components/Header';
 // import SmallCard from './components/SmallCard';
 
-import { UserIcon, CurrencyDollarIcon, SearchIcon } from '@heroicons/react/solid'
+import { UserIcon, CurrencyDollarIcon, SearchIcon, ArrowLeftIcon, ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
 // import DataTable from './components/DataTable';
 import Table from './components/Table';
+import DdMenuStatus from './components/DdMenuStatus';
+import DdMenuPeriod from './components/DdMenuPeriod';
 
 const getData = () => [
   {
@@ -206,9 +209,9 @@ export default function App() {
           </div>
         </section>
         <section className="pt-6">
-          <div className='flex flex-col md:flex-row items-center justify-between ml-2'>
+          <div className='flex flex-col md:flex-row items-center justify-between ml-2 mb-5'>
             <h2 className="text-2xl font-bold">Market Summary</h2>
-            <div className='flex flex-row flex-end md:flex-row'>
+            <div className='flex flex-row flex-end mr-2 md:flex-row'>
               <label className="relative block mr-5">
                 <span className="sr-only">Search</span>
                 <span className="absolute inset-y-0 left-0 flex items-center pl-2">
@@ -218,18 +221,20 @@ export default function App() {
                 </span>
                 <input className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Enter to search" type="text" name="search"/>
               </label>
-              <select className="mr-5" id="status" name="status">
+              {/* <select className="mr-5" id="status" name="status">
                 <option value="" selected disabled hidden>Status</option>
                 <option value="online">Online</option>
                 <option value="offline">Offline</option>
-              </select>
-              <select className="mr-5" id="Period" name="Period">
+              </select> */}
+              <DdMenuStatus />
+              {/* <select className="mr-5" id="Period" name="Period">
                 <option value="" selected disabled hidden>Period</option>
                 <option value="online">1</option>
                 <option value="offline">2</option>
                 <option value="online">3</option>
                 <option value="offline">4</option>
-              </select>
+              </select> */}
+              <DdMenuPeriod />
             </div>
           </div>
 
@@ -266,37 +271,119 @@ export default function App() {
                   <tr>
                     <td className="p-5">IL-ISTANBUL LOTTERY</td>
                     <td className="text-center">4</td>
-                    <td className="text-center">
+                    <td className="text-center px-5 text-sm">
                       <div className="flex justify-between">
                         <div>Close 21.30</div>
                         <div>Close 21.30</div>
                       </div>
-                      <div></div>
+                      <div>
+                        <div className="w-full bg-gray-300 h-1">
+                          <div className="bg-yellow-300 h-1 w-1/2"></div>
+                        </div>
+                      </div>
                     </td>
                     <td className="text-center">
                       <div className="bg-yellow-300 text-black w-20 px-3 inline-block rounded-md">Online</div>
                     </td>
-                    <td className="text-right">2.029.000</td>
-                    <td className="text-right pr-5">2.024.694</td>
+                    <td className="text-right"><span className="text-sm text-gray-400 mr-2">Rp.</span>2.029.000</td>
+                    <td className="text-right pr-5"><span className="text-sm text-gray-400 mr-2">Rp.</span>2.024.694</td>
                   </tr>
                   <tr>
                     <td className="p-5">JP-JAPANESE</td>
                     <td className="text-center">1</td>
-                    <td className="text-center">
+                    <td className="text-center px-5 text-sm">
                       <div className="flex justify-between">
                         <div>Close 18.30</div>
                         <div>Offline</div>
                       </div>
-                      <div></div>
+                      <div>
+                        <div className="w-full bg-gray-300 h-1">
+                          <div className="bg-yellow-300 h-1 w-0"></div>
+                        </div>
+                      </div>
                     </td>
                     <td className="text-center">
                       <div className="bg-gray-500 text-white w-20 px-3 inline-block rounded-md">Offline</div>
                     </td>
-                    <td className="text-right">0</td>
-                    <td className="text-right pr-5">0</td>
+                    <td className="text-right"><span className="text-sm text-gray-400 mr-2">Rp.</span>0</td>
+                    <td className="text-right pr-5"><span className="text-sm text-gray-400 mr-2">Rp.</span>0</td>
+                  </tr>
+                  <tr>
+                    <td className="p-5">PL-POLLANDIA</td>
+                    <td className="text-center">3</td>
+                    <td className="text-center px-5 text-sm">
+                      <div className="flex justify-between">
+                        <div>Close 00.45</div>
+                        <div>4.45</div>
+                      </div>
+                      <div>
+                        <div className="w-full bg-gray-300 h-1">
+                          <div className="bg-yellow-300 h-1 w-1/3"></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="text-center">
+                      <div className="bg-yellow-300 text-black w-20 px-3 inline-block rounded-md">Online</div>
+                    </td>
+                    <td className="text-right"><span className="text-sm text-gray-400 mr-2">Rp.</span>2.972.100.</td>
+                    <td className="text-right pr-5"><span className="text-sm text-gray-400 mr-2">Rp.</span>2.971.500</td>
+                  </tr>
+                  <tr>
+                    <td className="p-5">UKN-UKRAINA</td>
+                    <td className="text-center">1</td>
+                    <td className="text-center px-5 text-sm">
+                      <div className="flex justify-between">
+                        <div>Close 11.00</div>
+                        <div>Offline</div>
+                      </div>
+                      <div>
+                        <div className="w-full bg-gray-300 h-1">
+                          <div className="bg-yellow-300 h-1 w-0"></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="text-center">
+                      <div className="bg-gray-500 text-white w-20 px-3 inline-block rounded-md">Offline</div>
+                    </td>
+                    <td className="text-right"><span className="text-sm text-gray-400 mr-2">Rp.</span>7.126.590</td>
+                    <td className="text-right pr-5"><span className="text-sm text-gray-400 mr-2">Rp.</span>7.034078</td>
+                  </tr>
+                  <tr>
+                    <td className="p-5">IL-ISTANBUL LOTTERY</td>
+                    <td className="text-center">4</td>
+                    <td className="text-center px-5 text-sm">
+                      <div className="flex justify-between">
+                        <div>Close 21.30</div>
+                        <div>3.30</div>
+                      </div>
+                      <div>
+                        <div className="w-full bg-gray-300 h-1">
+                          <div className="bg-yellow-300 h-1 w-1/5"></div>
+                        </div>
+                      </div>
+                    </td>
+                    <td className="text-center">
+                      <div className="bg-yellow-300 text-black w-20 px-3 inline-block rounded-md">Online</div>
+                    </td>
+                    <td className="text-right"><span className="text-sm text-gray-400 mr-2">Rp.</span>2.029.000</td>
+                    <td className="text-right pr-5"><span className="text-sm text-gray-400 mr-2">Rp.</span>2.24.694</td>
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </div>
+
+          <div className="flex flex-row justify-end mr-2 mb-5 space-x-4">
+            <div className="text-gray-400">Items per pages</div>
+            <select className="w-14 cursor-pointer">
+              <option>5</option>
+              <option>10</option>
+              <option>20</option>
+            </select>
+            <div className="text-gray-400">1 of 2</div>
+            <div className="flex flex-row">
+              <ChevronLeftIcon className="h-6 cursor-pointer text-gray-400"/>
+              <ChevronRightIcon className="h-6 cursor-pointer"/>
             </div>
           </div>
           
