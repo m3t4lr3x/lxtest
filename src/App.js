@@ -117,7 +117,7 @@ export default function App() {
                 <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
               </div>
               <span className="text-white text-sm mb-2">Total Ongoing Bet</span>
-              <h2 className="text-white font-bold text-3xl"><span className="text-sm text-gray-400 mr-2">Rp.</span>854.484M</h2>
+              <h2 className="text-white font-bold text-3xl"><span className="text-sm text-gray-400 mr-2">Rp.</span>12.127.690</h2>
             </div>
             
             {/* right-smallcard-container */}
@@ -259,20 +259,20 @@ export default function App() {
               <table className="items-center w-full bg-white border-collapse">
                 <thead className="bg-black text-white">
                   <tr className="">
-                    <td className="p-5">Name</td>
-                    <td className="text-center">Period</td>
-                    <td className="text-center">Close Time</td>
-                    <td className="text-center w-30 px-5">Status</td>
-                    <td className="text-right">Total Player Bet</td>
-                    <td className="text-right pr-5">Total Player Paid</td>
+                    <td className="p-5 whitespace-nowrap px-4">Name</td>
+                    <td className="text-center whitespace-nowrap px-4">Period</td>
+                    <td className="text-center whitespace-nowrap px-4">Close Time</td>
+                    <td className="text-center whitespace-nowrap px-4 w-30 px-5">Status</td>
+                    <td className="text-right whitespace-nowrap pl-4">Total Player Bet</td>
+                    <td className="text-right whitespace-nowrap pl-4 pr-5">Total Player Paid</td>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="p-5">IL-ISTANBUL LOTTERY</td>
+                    <td className="p-5 whitespace-nowrap">IL-ISTANBUL LOTTERY</td>
                     <td className="text-center">4</td>
-                    <td className="text-center px-5 text-sm">
-                      <div className="flex justify-between">
+                    <td className="text-center px-5 text-sm whitespace-nowrap">
+                      <div className="flex justify-between space-x-4">
                         <div>Close 21.30</div>
                         <div>Close 21.30</div>
                       </div>
@@ -289,10 +289,10 @@ export default function App() {
                     <td className="text-right pr-5"><span className="text-sm text-gray-400 mr-2">Rp.</span>2.024.694</td>
                   </tr>
                   <tr>
-                    <td className="p-5">JP-JAPANESE</td>
+                    <td className="p-5 whitespace-nowrap">JP-JAPANESE</td>
                     <td className="text-center">1</td>
                     <td className="text-center px-5 text-sm">
-                      <div className="flex justify-between">
+                      <div className="flex justify-between space-x-4">
                         <div>Close 18.30</div>
                         <div>Offline</div>
                       </div>
@@ -309,10 +309,10 @@ export default function App() {
                     <td className="text-right pr-5"><span className="text-sm text-gray-400 mr-2">Rp.</span>0</td>
                   </tr>
                   <tr>
-                    <td className="p-5">PL-POLLANDIA</td>
+                    <td className="p-5 whitespace-nowrap">PL-POLLANDIA</td>
                     <td className="text-center">3</td>
                     <td className="text-center px-5 text-sm">
-                      <div className="flex justify-between">
+                      <div className="flex justify-between space-x-4">
                         <div>Close 00.45</div>
                         <div>4.45</div>
                       </div>
@@ -329,10 +329,10 @@ export default function App() {
                     <td className="text-right pr-5"><span className="text-sm text-gray-400 mr-2">Rp.</span>2.971.500</td>
                   </tr>
                   <tr>
-                    <td className="p-5">UKN-UKRAINA</td>
+                    <td className="p-5 whitespace-nowrap">UKN-UKRAINA</td>
                     <td className="text-center">1</td>
                     <td className="text-center px-5 text-sm">
-                      <div className="flex justify-between">
+                      <div className="flex justify-between space-x-4">
                         <div>Close 11.00</div>
                         <div>Offline</div>
                       </div>
@@ -349,10 +349,10 @@ export default function App() {
                     <td className="text-right pr-5"><span className="text-sm text-gray-400 mr-2">Rp.</span>7.034078</td>
                   </tr>
                   <tr>
-                    <td className="p-5">IL-ISTANBUL LOTTERY</td>
+                    <td className="p-5 whitespace-nowrap">IL-ISTANBUL LOTTERY</td>
                     <td className="text-center">4</td>
                     <td className="text-center px-5 text-sm">
-                      <div className="flex justify-between">
+                      <div className="flex justify-between space-x-4">
                         <div>Close 21.30</div>
                         <div>3.30</div>
                       </div>
@@ -382,7 +382,7 @@ export default function App() {
             </select>
             <div className="text-gray-400">1 of 2</div>
             <div className="flex flex-row">
-              <ChevronLeftIcon className="h-6 cursor-pointer text-gray-400"/>
+              <ChevronLeftIcon className="h-6 text-gray-400"/>
               <ChevronRightIcon className="h-6 cursor-pointer"/>
             </div>
           </div>
