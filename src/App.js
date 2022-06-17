@@ -5,7 +5,7 @@ import React from 'react';
 import Header from './components/Header';
 // import SmallCard from './components/SmallCard';
 
-import { UserIcon, CurrencyDollarIcon, SearchIcon, ArrowLeftIcon, ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/solid'
+import { UserIcon, CurrencyDollarIcon, SearchIcon, ArrowLeftIcon, ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon, UserGroupIcon, TrendingUpIcon, TrendingDownIcon, CalculatorIcon, RefreshIcon } from '@heroicons/react/solid'
 // import DataTable from './components/DataTable';
 import Table from './components/Table';
 import DdMenuStatus from './components/DdMenuStatus';
@@ -114,7 +114,7 @@ export default function App() {
             {/* Left-Bigcard */}
             <div className="flex flex-col items-center justify-center rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out mx-2 p-5">
               <div className="relative h-16 w-16 mb-2">
-                <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
+                <CurrencyDollarIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
               </div>
               <span className="text-white text-sm mb-2">Total Ongoing Bet</span>
               <h2 className="text-white font-bold text-3xl"><span className="text-sm text-gray-400 mr-2">Rp.</span>12.127.690</h2>
@@ -144,7 +144,7 @@ export default function App() {
 
                   <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
                     <div className="relative h-16 w-16 flex-shrink-0">
-                      <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
+                      <UserGroupIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
                     </div>
                     <div>
                       <span className="text-white text-sm">Total Active / Total Agent</span>
@@ -156,7 +156,7 @@ export default function App() {
 
                   <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
                     <div className="relative h-16 w-16 flex-shrink-0">
-                      <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
+                      <RefreshIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
                     </div>
                     <div>
                       <span className="text-white text-sm">Total Turnover</span>
@@ -168,7 +168,7 @@ export default function App() {
 
                   <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
                     <div className="relative h-16 w-16 flex-shrink-0">
-                      <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
+                      <CalculatorIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
                     </div>
                     <div>
                       <span className="text-white text-sm">Total Paid</span>
@@ -180,7 +180,7 @@ export default function App() {
 
                   <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
                     <div className="relative h-16 w-16 flex-shrink-0">
-                      <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
+                      <TrendingUpIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
                     </div>
                     <div>
                       <span className="text-white text-sm">Total Win</span>
@@ -192,7 +192,7 @@ export default function App() {
 
                   <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
                     <div className="relative h-16 w-16 flex-shrink-0">
-                      <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
+                      <TrendingDownIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
                     </div>
                     <div>
                       <span className="text-white text-sm">Total Profit Lose</span>
