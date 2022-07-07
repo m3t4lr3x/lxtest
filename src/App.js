@@ -5,103 +5,16 @@ import React from 'react';
 import Header from './components/Header';
 // import SmallCard from './components/SmallCard';
 
-import { UserIcon, CurrencyDollarIcon, SearchIcon, ArrowLeftIcon, ArrowRightIcon, ChevronLeftIcon, ChevronRightIcon, UserGroupIcon, TrendingUpIcon, TrendingDownIcon, CalculatorIcon, RefreshIcon } from '@heroicons/react/solid'
-// import DataTable from './components/DataTable';
-import Table from './components/Table';
+import { UserIcon, CurrencyDollarIcon, ChevronLeftIcon, ChevronRightIcon, UserGroupIcon, TrendingUpIcon, TrendingDownIcon, CalculatorIcon, RefreshIcon } from '@heroicons/react/solid'
+
 import DdMenuStatus from './components/DdMenuStatus';
 import DdMenuPeriod from './components/DdMenuPeriod';
+import SmallCard from './components/SmallCard';
 
-const getData = () => [
-  {
-    name: "Jane Cooper",
-    email: "jane.cooper@example.com",
-    title: "Regional Paradigm Technician",
-    department: "Optimization",
-    status: "Active",
-    role: "Admin",
-    imgUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
-  },
-  {
-    name: "Cody Fisher",
-    email: "cody.fisher@example.com",
-    title: "Product Directives Officer",
-    department: "Intranet",
-    status: "Active",
-    role: "Owner",
-    imgUrl:
-      "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
-  },
-  {
-    name: "Esther Howard",
-    email: "esther.howard@example.com",
-    title: "Forward Response Developer",
-    department: "Directives",
-    status: "Active",
-    role: "Member",
-    imgUrl:
-      "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
-  },
-  {
-    name: "Jenny Wilson",
-    email: "jenny.wilson@example.com",
-    title: "Central Security Manager",
-    department: "Program",
-    status: "Active",
-    role: "Member",
-    imgUrl:
-      "https://images.unsplash.com/photo-1498551172505-8ee7ad69f235?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
-  },
-  {
-    name: "Kristin Watson",
-    email: "kristin.watson@example.com",
-    title: "Lean Implementation Liaison",
-    department: "Mobility",
-    status: "Active",
-    role: "Admin",
-    imgUrl:
-      "https://images.unsplash.com/photo-1532417344469-368f9ae6d187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
-  },
-  {
-    name: "Cameron Williamson",
-    email: "cameron.williamson@example.com",
-    title: "Internal Applications Engineer",
-    department: "Security",
-    status: "Active",
-    role: "Member",
-    imgUrl:
-      "https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=4&w=256&h=256&q=60",
-  },
-];
 
 export default function App() {
 
-  const columns = React.useMemo(
-    () => [
-      {
-        Header: "Name",
-        accessor: "name",
-      },
-      {
-        Header: "Title",
-        accessor: "title",
-      },
-      {
-        Header: "Status",
-        accessor: "status",
-      },
-      {
-        Header: "Role",
-        accessor: "role",
-      },
-    ],
-    []
-  );
-
-  const data = React.useMemo(() => getData(), [])
-
   return (
-    // <div className='flex flex-col items-center justify-center min-h-screen py-2'>
     <div className=''>
 
       <Header />
@@ -130,77 +43,72 @@ export default function App() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
                   {/* smallcards-area */}
-                  <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
-                    <div className="relative h-16 w-16 flex-shrink-0">
-                      <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
-                    </div>
-                    <div>
-                      <span className="text-white text-sm">Total User Active</span>
-                      <h2 className="text-white font-bold text-2xl">47.04M</h2>
-                      <span className="text-green-500 text-xs mr-1">+5% </span>
-                      <span className="text-gray-400 text-xs">Yesterday 31.987M</span>
-                    </div>
-                  </div>
 
-                  <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
-                    <div className="relative h-16 w-16 flex-shrink-0">
-                      <UserGroupIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
-                    </div>
-                    <div>
-                      <span className="text-white text-sm">Total Active / Total Agent</span>
-                      <h2 className="text-white font-bold text-2xl">2 / 2</h2>
-                      <span className="text-green-500 text-xs mr-1">+50% </span>
-                      <span className="text-gray-400 text-xs">Yesterday 1/2</span>
-                    </div>
-                  </div>
+                  <SmallCard 
+                    title="Total User Active"
+                    value="47.04M"
+                    plusminus="plus"
+                    percen="+5%"
+                    details="Yesterday 31.987M"
+                  >
+                    <UserIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
+                  </SmallCard>
 
-                  <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
-                    <div className="relative h-16 w-16 flex-shrink-0">
-                      <RefreshIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
-                    </div>
-                    <div>
-                      <span className="text-white text-sm">Total Turnover</span>
-                      <h2 className="text-white font-bold text-2xl"><span className="text-sm text-gray-400 mr-2">Rp.</span>854.484M</h2>
-                      <span className="text-green-500 text-xs mr-1">+50% </span>
-                      <span className="text-gray-400 text-xs">Yesterday 1/2</span>
-                    </div>
-                  </div>
+                  <SmallCard 
+                    title="Total Active / Total Agent"
+                    value="2 / 2"
+                    plusminus="plus"
+                    percen="+50%"
+                    details="Yesterday 1/2"
+                  >
+                    <UserGroupIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
+                  </SmallCard>
 
-                  <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
-                    <div className="relative h-16 w-16 flex-shrink-0">
-                      <CalculatorIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
-                    </div>
-                    <div>
-                      <span className="text-white text-sm">Total Paid</span>
-                      <h2 className="text-white font-bold text-2xl"><span className="text-sm text-gray-400 mr-2">Rp.</span>185.024M</h2>
-                      <span className="text-red-500 text-xs mr-1">-18% </span>
-                      <span className="text-gray-400 text-xs">Yesterday Rp. 214.059M</span>
-                    </div>
-                  </div>
+                  <SmallCard 
+                    title="Total Turnover"
+                    currency="Rp."
+                    value="854.484M"
+                    plusminus="plus"
+                    percen="+50%"
+                    details="Yesterday 1/2"
+                  >
+                    <RefreshIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
+                  </SmallCard>
 
-                  <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
-                    <div className="relative h-16 w-16 flex-shrink-0">
-                      <TrendingUpIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
-                    </div>
-                    <div>
-                      <span className="text-white text-sm">Total Win</span>
-                      <h2 className="text-white font-bold text-2xl"><span className="text-sm text-gray-400 mr-2">Rp.</span>345.048M</h2>
-                      <span className="text-green-500 text-xs mr-1">+12% </span>
-                      <span className="text-gray-400 text-xs">Yesterday 302.485M</span>
-                    </div>
-                  </div>
+                  <SmallCard 
+                    title="Total Paid"
+                    currency="Rp."
+                    value="185.024M"
+                    plusminus="minus"
+                    percen="-18%"
+                    details="Yesterday Rp. 214.059M"
+                  >
+                    <CalculatorIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
+                  </SmallCard>
 
-                  <div className="flex items-center mx-2 mt-5 space-x-4 rounded-sm cursor-pointer bg-black hover:bg-gray-900 hover:scale-105 transition transform duration-200 ease-out py-3 px-3">
-                    <div className="relative h-16 w-16 flex-shrink-0">
-                      <TrendingDownIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
-                    </div>
-                    <div>
-                      <span className="text-white text-sm">Total Profit Lose</span>
-                      <h2 className="text-white font-bold text-2xl"><span className="text-sm text-gray-400 mr-2">Rp.</span>47.490M</h2>
-                      <span className="text-red-500 text-xs mr-1">+12% </span>
-                      <span className="text-gray-400 text-xs">Yesterday 62.485M</span>
-                    </div>
-                  </div>
+                  <SmallCard 
+                    title="Total Win"
+                    currency="Rp."
+                    value="345.048M"
+                    plusminus="plus"
+                    percen="+12%"
+                    details="Yesterday 302.485M"
+                  >
+                    <TrendingUpIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
+                  </SmallCard>
+
+
+                  <SmallCard 
+                    title="Total Profit Lose"
+                    currency="Rp."
+                    value="47.490M"
+                    plusminus="minus"
+                    percen="+12%"
+                    details="Yesterday 62.485M"
+                  >
+                    <TrendingDownIcon className="h-18 p-2 text-white bg-gray-700 rounded-full"/>
+                  </SmallCard>
+
 
                   {/* end - smallcards-area */}
               </div>
@@ -221,38 +129,11 @@ export default function App() {
                 </span>
                 <input className="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Enter to search" type="text" name="search"/>
               </label>
-              {/* <select className="mr-5" id="status" name="status">
-                <option value="" selected disabled hidden>Status</option>
-                <option value="online">Online</option>
-                <option value="offline">Offline</option>
-              </select> */}
+
               <DdMenuStatus />
-              {/* <select className="mr-5" id="Period" name="Period">
-                <option value="" selected disabled hidden>Period</option>
-                <option value="online">1</option>
-                <option value="offline">2</option>
-                <option value="online">3</option>
-                <option value="offline">4</option>
-              </select> */}
               <DdMenuPeriod />
             </div>
           </div>
-
-          {/* <div className="min-h-screen bg-gray-100 text-gray-900">
-            <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-              <div className="">
-                <h1 className="text-xl font-semibold">React Table + Tailwind CSS = ❤</h1>
-              </div>
-              <div className="mt-4">
-                <DataTable columns={columns} data={data} />
-              </div>
-            </main>
-          </div> */}
-
-          {/* <h1>Hello React!</h1>
-          <div>
-            <Table columns={columns} data={data} />
-          </div> */}
 
           <div className="w-full mb-12 px-2">
             <div className="block w-full overflow-x-auto">
